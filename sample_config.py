@@ -12,16 +12,16 @@ class Config(object):
     # Array to store users who are authorized to use the bot
     AUTH_USERS = set(str(x) for x in os.environ.get("AUTH_USERS", "").split())
     # reg: Procedures
-    UTUBE_BOT_USERS = []
-    SUPER_DLBOT_USERS = []
-    SUPER3X_DLBOT_USERS = []
-    SUPER7X_DLBOT_USERS = []
+    UTUBE_BOT_USERS = [528272188]
+    SUPER_DLBOT_USERS = [528272188]
+    SUPER3X_DLBOT_USERS = [528272188]
+    SUPER7X_DLBOT_USERS = [528272188]
     BANNED_USERS = []
     # Wat was I thinking? :\
     # the download location, where the HTTP Server runs
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     # Telegram maximum file upload size
-    MAX_FILE_SIZE = 50000000
+    MAX_FILE_SIZE = 1572864000
     TG_MAX_FILE_SIZE = 1572864000
     FREE_USER_MAX_FILE_SIZE = 50000000
     # chunk size that should be used with requests
